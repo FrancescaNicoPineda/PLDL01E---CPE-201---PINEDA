@@ -13,11 +13,9 @@ emp_name= str(input("Employee's Name:"))
 emp_depart= str(input("Department:"))
 rate_per_hr= float(input("Employee's Rate per Hour:"))
 hrs_per_day= float(input("Employee's Hours per Day:"))
-days_per_week= float(input("Employee's Days per Week:"))
-weeks_per_month= float(input("Emloyee's Weeks per Month:"))
 
 #calculations gross income
-gross_income= rate_per_hr*hrs_per_day*days_per_week*weeks_per_month
+gross_income= rate_per_hr*hrs_per_day
 
 
 #ssscontribution
