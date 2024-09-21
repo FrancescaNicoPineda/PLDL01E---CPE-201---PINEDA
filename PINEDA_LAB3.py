@@ -35,8 +35,8 @@ hrs_tardy= float(input("No. of Hours Tardy:"))
 OT_hrs= float(input("No. of Overtime Hours:"))
 absences_hrs= float(input("No. of Hours Absent:"))
 hononarium_hrs= float(input("No. of Hononarium Hours:"))
-cut_off= float(input("Cut-Off:"))
-pay_period= float(input("Pay Period:"))
+cut_off= str(input("Cut-Off:"))
+pay_period= str(input("Pay Period:"))
 #Pay Calculations
 basic_pay=rate_hr*hrs_day
 OT_pay=hrs_day*rate_hr
@@ -127,15 +127,15 @@ elif gross_income > 100000.00:
 if 0 <= gross_income <= 10417:
     withholding_tax = 0
 elif 10418 <= gross_income <= 16666:
-    withholding_tax = (0.00 + 15%)/10417
+    withholding_tax = 0.00 + 0.15/10417
 elif 16667 <= gross_income <= 33332:
-    withholding_tax = (937.50+20%)/16667
+    withholding_tax = 937.50+0.20/16667
 elif 33333 <= gross_income <= 83332:
-    withholding_tax = (4270.70+25%)/33333
-elif 83333 <= gross_income <= 333332
-    withholding_tax = (16770.70+30%)/83333
-else
-    withholding_tax= (91770.70+35%)/333333
+    withholding_tax = 4270.70+0.25/33333
+elif 83333 <= gross_income <= 333332:
+    withholding_tax = 16770.70+0.30/83333
+else:
+    withholding_tax= 91770.70+0.35/333333
 
 #,net, total deduction
 total_deduction=sss_contri+philhealth_contri+pagibig_contri+tardiness+absences
