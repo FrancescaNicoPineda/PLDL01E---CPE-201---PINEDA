@@ -39,11 +39,11 @@ cut_off= str(input("Cut-Off:"))
 pay_period= str(input("Pay Period:"))
 #Pay Calculations
 basic_pay=rate_hr*hrs_day
-OT_pay=hrs_day*rate_hr
+OT_pay=OT_hrs*rate_hr
 hononarium= hononarium_hrs*rate_hr
 gross_income=basic_pay+OT_pay+hononarium
 #deductions for tardy, absent
-tardiness=rate_hr*hrs_day
+tardiness=rate_hr*hrs_tardy
 absences=absences_hrs*rate_hr
 #sss_contri
 if 0 <= gross_income <= 4249.99:
