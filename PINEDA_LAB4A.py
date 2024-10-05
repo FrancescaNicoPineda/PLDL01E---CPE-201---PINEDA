@@ -19,7 +19,7 @@ class Employee:
         self.emp_hour_overtime = float(input("Employee overtime hours: "))
         self.hononarium_pay = float(input("Employee hononarium pay: "))
         self.emp_num_of_absences = int(input("Employee absences: "))
-        self.emp_num_tardiness = int(input("Emplouee tardiness: "))
+        self.emp_num_tardiness = int(input("Employee tardiness: "))
 
     def emp_salary_computation(self):
         self.basic_pay = self.emp_rate_per_hour * self.emp_num_of_hours_per_payday
