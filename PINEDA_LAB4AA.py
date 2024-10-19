@@ -13,6 +13,8 @@ class Employee:
         self.employee_code = input("Enter Employee Code: ")
         self.salary_cut_off = input("Enter Cut-Off Date: ")
 
+
+
         #input for salary computation
         self.emp_rate_per_hour = float(input("Employee rate per hour: "))
         self.emp_num_of_hours_per_payday = int(input("Employee's number of hours worked per payday: "))
